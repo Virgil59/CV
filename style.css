@@ -41,43 +41,320 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*reset end*/
 
 a {
 	text-decoration: none;
 }
 
-.navbar{
+/*fond & navigation*/
+body {
+	background-color: #04120f;
+}
+
+.navbar {
 	margin: auto;
-	background: black;
+	background: #111;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 }
 
-nav ul{
+nav ul {
 	text-align: center;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
+							0 -1px 0 hsl(0, 0%, 9%) inset,
+							0 -2px 0 hsl(0, 0%, 11%) inset,
+							0 -3px 0 hsl(0, 0%, 13%) inset,
+							0 -4px 0 hsl(0, 0%, 15%) inset,
+							0 -5px 0 hsl(0, 0%, 20%) inset;
 }
 
-nav ul li{
+nav ul li {
 	display: inline-block;
 	padding: 20px;
 	font-size: 20px;
 	font-family: helvetica;
 }
 
-nav ul li a{
+nav ul li a {
 	padding: 0px 5px;
 	color: #F7BB17;
+	opacity: 0.8;
+	text-shadow: 0 1px 0 rgba(17, 17, 17, 0.8);
+	text-transform: uppercase;
 }
-nav ul li a:hover{
-	color: white
+
+nav ul li a:hover {
+	color: white;
 }
-h1{
+
+header {
+    background-image: url("img/wallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+		position: relative;
+}
+
+#home h1 {
 	text-align: center;
+	line-height: 150%;
 	font-size: 50px;
-	padding-top: 200px;
+	padding-top: 235px;
 	font-family: helvetica;
+	color: white;
 }
-h3{
+
+#home h3 {
 	text-align: center;
-	font-size: 25px;
+	font-size: 30px;
 	font-family: helvetica;
-	padding-top: 100px;
+	padding: 60px 0px 250px 0px;
+	color: #F7BB17;
+	opacity: 0.8;
+}
+
+#imgmenu img {
+		width: 50px;
+}
+
+/*Main*/
+/*blocs titres & contenus*/
+
+#formation, #experiences {
+	background-color:#101313;
+}
+
+.titleleft {
+	font-size: 25px;
+	font-family: arial;
+	color: #F7BB17;
+	opacity: 0.7;
+	float: left;
+	width: 40%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.titleright {
+	font-size: 25px;
+	font-family: arial;
+	color: #F7BB17;
+	opacity: 0.7;
+	float: right;
+	width: 40%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#presentation, #formation, #experiences {
+	padding: 6% 0;
+}
+
+.intitulesright {
+	color: white;
+	float: right;
+	padding-right:10%;
+	padding-top: 5%;
+	width: 40%;
+}
+
+.intitulesleft {
+	color: white;
+	float: left;
+	padding-left:10%;
+	padding-top: 5%;
+	width: 40%;
+}
+
+h2 {
+	font-weight: bolder;
+	padding-bottom: 10px;
+	color:  #F7BB17;
+	opacity: 0.7;
+	line-height: 120%;
+}
+
+h2 span {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 15px;
+	color: white;
+}
+
+.lieu {
+	color: grey;
+	margin-bottom: 10px;
+	margin-left: 5%;
+	line-height: 120%;
+}
+
+.description {
+	font-family: arial;
+	opacity: 0.9;
+	line-height: 130%;
+	margin-bottom: 25px;
+	margin-left: 10%;
+}
+
+.clear {
+	clear: both;
+}
+
+#flexbox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 6%;
+}
+
+#flexbox 	div {
+	margin: 30px 5%;
+	display: block;
+	text-align: center;
+}
+
+#flexbox .web {
+	text-align: center;
+	width: calc(20% - 5%);
+}
+
+#flexbox .infographie {
+	text-align: center;
+	width: calc(10% - 5%);
+}
+
+#presentation img {
+	border-radius: 8px;
+  width: 150px;
+	margin-top: 25px;
+}
+
+#contact img {
+	width: 50px;
+}
+
+#flexbox img {
+	width: 72px;
+}
+
+.title {
+	padding: 6% 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: arial;
+	color: #F7BB17;
+	opacity: 0.7;
+}
+
+/*Pied de Page avec Icons*/
+
+footer {
+	background-color: white;
+}
+
+footer ul {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+footer ul li {
+	width: 15%;
+	display: inline-block;
+}
+
+footer ul li a {
+	color: grey;
+	transition: 0.2s;
+}
+
+footer ul li a:hover {
+	color: black;
+	text-shadow: 0.5px 0.5px 1px;
+	transition: 0.8s;
+}
+
+button {
+	display: none;
+}
+
+/*Responsive*/
+@media screen and (max-width: 639px) {
+
+	nav {
+		display: none;
+	}
+
+	nav ul li {
+		display: inline-block;
+		padding: 10px 40px;
+	}
+
+	button {
+		display: block;
+		position: absolute;
+		margin-top: 50px;
+		width: 100%;
+		opacity: 0.7;
+		background: none;
+		border: none;
+	}
+
+	#imgmenu:hover nav {
+		display: block;
+	}
+
+	#presentation .intitulesright .description {
+		width: 80%;
+	}
+
+	#flexbox img {
+		width: 100%;
+	}
+
+	#flexbox .web {
+		width: calc(20% - 7%);
+	}
+
+	#flexbox .infographie {
+		width: calc(20% - 7%);
+	}
+
+	#contact img {
+		width: 40px;
+	}
+
+	#contact li {
+		margin: 0 5px;
+	}
+
+	.titleleft {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10%;
+	}
+
+	.titleright {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10%;
+	}
+
+	.intitulesright {
+		padding: 0% 10%;
+		width: 80%;
+	}
+
+	.intitulesleft {
+		padding: 0% 10%;
+		width: 80%;
+	}
+
 }
