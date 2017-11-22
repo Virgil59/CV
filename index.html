@@ -1,132 +1,701 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <title>Deljehier Virgil Web Developper</title>
+
+<head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
-    <header> <!--menu avec bouton invisible(responsive) + image de fond + titre et sous-titre-->
-      <div id="imgmenu">
-        <button type="button" name="button"><img src="img/menu.png" alt="bouton_menu"></button>
-        <div class="navbar">
-          <nav>
-            <ul>
-              <li><a href="#home">accueil</a></li>
-              <li><a href="#presentation">présentation</a></li>
-              <li><a href="#formation">formations</a></li>
-              <li><a href="#ancre">compétences</a></li>
-              <li><a href="#experiences">expériences</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </nav>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Portfolio" content="">
+    <meta name="Deljehier Virgil" content="">
+
+    <title>Deljehier Virgil Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">3DeV</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#experience">Expériences</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">A Propos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
-      <div id="home">
-        <h1>Virgil DELJEHIER</h1>
-        <h3>Web Developper</h3>
-      </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Web Développeur / Graphiste</div>
+                <div class="intro-heading">Deljehier Virgil</div>
+                <a href="#services" class="page-scroll btn btn-xl">En savoir plus</a>
+            </div>
+        </div>
     </header>
-    <main> <!--contenu_principal-->
-      <div id="presentation">
-        <div class="titleleft"> <!--titre à gauche-->
-          <h1>présentation</h1>
-          <a href="img/photo.png"><img src="img/photo.png" alt="Moi"></a>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Graphisme</h4>
+                    <p class="text-muted">Mise en page sous InDesign, Illustrations vectoriel sous Illustrator, Rendus architecturaux et réalisation de logos 3D sous Cinéma 4D, V-Ray.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Développement</h4>
+                    <p class="text-muted">UX/UI Design et développement front responsive.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Photographie</h4>
+                    <p class="text-muted">Réalisations et retouches photos afin de promouvoir un produit, une marque, un territoire,...</p>
+                </div>
+            </div>
         </div>
-        <div class="intitulesright"> <!--pavé à droite-->
-          <p class="description">Né dans le sud Avesnois (Nord, France), le 09 Janvier 1992, j'ai suivi de 2012 à 2015 des études en infographie.<br>Actuellement en formation au sein de la PopSchool je suis à la recherche d'un stage, et donc à l'écoute des conseils. Aimant voyager, je suis toujours à la recherche de point de vue et de jeux de lumière intéressants. </p>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Web / Illustration / 3D / Temps Réel / Photographie.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/mdev_accueil_preview.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Web</h4>
+                        <p class="text-muted">web développement / maquettes</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dfaep_preview.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Illustration</h4>
+                        <p class="text-muted">Vectoriel / InDesign</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cuisine_preview.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>3D</h4>
+                        <p class="text-muted">C4D / V-Ray</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/portugal_preview.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Photographie</h4>
+                        <p class="text-muted">Paysages / Animaux / ...</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/unity_preview.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Temps Réel</h4>
+                        <p class="text-muted">Unity 3D</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="clear">
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Expériences</h2>
+                    <h3 class="section-subheading text-muted">L'idée de l'expérience ne remplace nullement l'expérience.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li class="timeline">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/pnr.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Mai - Nov 2016</h4>
+                                    <h4 class="subheading">Aide au développement numérique (Service Civique)</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Réalisations et mises en pages d'affiches, flyers, panneaux, calicots, montages vidéo, charte stratégie facebook, illustration "Défi Familles à énergie positive" et réalisation exposition sur la transition énergétique ainsi que 600 photographies du territoire.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/afpa.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Octobre 2015</h4>
+                                    <h4 class="subheading">Designer logo 3D</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Création bénévole d'un logo 3D sur Cinema4D pour une promotion de formateurs de l' Association pour la formation professionnelle des adultes de Reims.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="formation"> <!--pavé formation-->
-        <div class="titleright"> <!--titre à droite-->
-          <h1>formations</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A Propos</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-lg-3 col-lg-offset-1">
+                    <div class="team-member">
+                        <img src="img/team/virgil.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Virgil Deljehier</h4>
+                        <p class="text-muted">Web Developpeur / Graphiste</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-lg-offset-1">
+                    <p class="large text-muted">Ayant suivi de 2012 à 2015 des études d'infographie au sein de l'Ecole Albert Jacquard de Namur, j'ai décidé de mettre en lien le graphisme et le code en intégrant la formation de développeur web et applications mobiles à la PopSchool. Etant en veille des innovations dans le domaine du numérique, j'aime découvrir et partager. Ne me limitant pas au domaine de l'informatique j'ai également pour passions la musique, les voyages, ainsi que la photographie.</p>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 col-lg-offset-1 cont">
+                  <div class="overlay">
+                    <div class="text">HTML5</div>
+                  </div>
+                  <img src="img/logos/HTML5.png" class="img-responsive img-centered" alt="">
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                  <div class="overlay">
+                    <div class="text">CSS3</div>
+                  </div>
+                  <img src="img/logos/CSS3.png" class="img-responsive img-centered" alt="">
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/js.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">Javascript</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/git-logo.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">GIT</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/mysql.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">MySQL</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/php.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">PHP</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 col-lg-offset-1 cont">
+                    <img src="img/logos/adobe-photoshop.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">Photoshop</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/adobe-illustrator.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">Illustrator</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/adobe-indesign.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">InDesign</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/C4D.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">Cinema4D</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/v-ray.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">V-Ray</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-4 col-md-2 col-lg-1 cont">
+                    <img src="img/logos/unity3d.png" class="img-responsive img-centered" alt="">
+                    <div class="overlay">
+                      <div class="text">Unity 3D</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="intitulesleft"> <!--pavé à gauche-->
-          <h2>Developper Web et Application mobile <span>/ 2017 - 2018 /</span></h2>
-          <p class="lieu">PopSchool, Valenciennes, France</p>
-          <p class="description">Formation d'apprentissage des languages de développement et programmation</p>
-          <h2>Techniques Infographiques <span>/ 2013 - 2015 /</span></h2>
-          <p class="lieu">Haute Ecole Albert Jacquard, Namur, Belgique</p>
-          <p class="description">2eme année spécialisation Architecture et Motion Design</p>
-          <h2>Graduat section Infographie <span>/ 2011 - 2012 /</span></h2>
-          <p class="lieu">Haute Ecole Albert Jacquard, Namur, Belgique</p>
-          <p class="description">1ère année de préparation et de découverte des métiers de l'infographie</p>
-          <h2>Licence Informatique <span>/ 2010 - 2011 /</span></h2>
-          <p class="lieu">Université des Sciences et Technologies, Villeneuve d'Ascq, France</p>
-          <p class="description">1ère année de licence informatique</p>
-          <h2>Etudes secondaires <span>/ 2007 - 2010 /</span></h2>
-          <p class="lieu">Cité scolaire Camille Claudel, Fourmies, France</p>
-          <p class="description">Obtention du baccalauréat scientifique option sciences de l'ingénieur</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
         </div>
-        <div class="clear">
-        </div>
-      </div>
-      <div id="ancre">
-      </div>
-      <div class="title">
-        <h1>compétences</h1>
-      </div>
-      <div id="flexbox"> <!--flexbox avec icônes compétences-->
-  			<div class="web">
-  				<img src="img/HTML5.png" alt="icon-html5">
-  			</div>
-        <div class="web">
-  				<img src="img/CSS3.png" alt="icon-css3">
-  			</div>
-  			<div class="web">
-  				<img src="img/git-logo.png" alt="icon-git">
-  			</div>
-  			<div class="web">
-  				<img src="img/mysql.png" alt="icon-mysql">
-  			</div>
-  			<div class="infographie">
-  				<img src="img/adobe-photoshop.png" alt="icon-photoshop">
-  			</div>
-  			<div class="infographie">
-  				<img src="img/adobe-illustrator.png" alt="icon-illustrator">
-  			</div>
-  			<div class="infographie">
-  				<img src="img/adobe-indesign.png" alt="icon-indesign">
-  			</div>
-        <div class="infographie">
-  				<img src="img/C4D.png" alt="icon-cinema4d">
-  			</div>
-        <div class="infographie">
-  				<img src="img/v-ray.png" alt="icon-vray">
-  			</div>
-        <div class="infographie">
-  				<img src="img/unity3d.png" alt="icon-unity3d">
-  			</div>
-      </div>
-      <div id="experiences"> <!--pavé expériences-->
-        <div class="titleleft">
-          <h1>expériences</h1> <!--titre à gauche-->
-        </div>
-        <div class="intitulesright"> <!--pavé à droite-->
-          <h2>Aide au développement numérique (Service Civique) <span>/ Mai - Nov 2016 /</span></h2>
-          <p class="lieu">Parc Naturel Régional de l'Avesnois, Le Quesnoy, France</p>
-          <p class="description">Réalisations et mises en pages (affiches, flyers, panneaux, calicots, ...), montages vidéo, charte stratégie facebook, illustration "Défi Familles à énergie positive" et réalisation exposition sur la transition énergétique ainsi que 600 photographies du territoire.</p>
-          <h2>Designer logo 3D <span>/ Oct 2015 /</span></h2>
-          <p class="lieu">AFPA, Reims, France</p>
-          <p class="description">Création bénévole d'un logo 3D sur Cinema4D pour une promotion de formateurs professionels.</p>
-        </div>
-        <div class="clear">
-        </div>
-      </div>
-    </main>
+    </section>
+
     <footer>
-      <div id="contact"> <!--pavé contact avec liste icônes-->
-        <ul>
-          <li><a href="tel:+33677970746"><img src="img/phone.png" alt="0677970746" id="phone"></a></li>
-          <li><a href="mailto:virgil.deljehier@gmail.com"><img src="img/mail.png" alt="virgil.deljehier@gmail.com" id="mail"></a></li>
-          <li><a href="https://www.google.fr/maps/place/59530+Le+Quesnoy/@50.2492946,3.5883659,13z/data=!3m1!4b1!4m5!3m4!1s0x47c28b7f8be7fcf9:0xdbe346f99ee9088f!8m2!3d50.247321!4d3.636668" target="_blank"><img src="img/location.png" alt="59530 Le Quesnoy" id="adress"></a></li>
-          <li><a href="https://www.linkedin.com/in/virgil-deljehier-4b9a2a111/" target="_blank"><img src="img/linkedin.png" alt="linkedin" id="linkedin"></a></li>
-          <li><a href="http://virgil-deljehier.wixsite.com/vd3d" target="_blank"><img src="img/site.png" alt="virgil-deljehier.wixsite.com/vd3d" id="wix"></a></li>
-        </ul>
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; 3DeV 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="tel:+33677970746"><i class="fa fa-phone"></i></a></li>
+                        <li><a href="mailto:virgil.deljehier@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/virgil-deljehier-4b9a2a111/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <!-- Portfolio Modal 1 -->
+    <div class="container text-center">
+    <!-- Large modal -->
+      <div class="modal fade bs-example-modal-lg" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div id="carousel1" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <h4>Maison de l'Emploi du Valenciennois</h4>
+                  <img class="img-responsive" src="img/portfolio/web/MDEV_accueil.png" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Maison de l'Emploi du Valenciennois</h4>
+                  <img class="img-responsive" src="img/portfolio/web/MDEV_LaMDEV.png" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Maison de l'Emploi du Valenciennois - Mobile</h4>
+                  <img class="img-responsive" src="img/portfolio/web/MDEV_accueil_mobile.png" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Maison de l'Emploi du Valenciennois - Menu mobile</h4>
+                  <img class="img-responsive" src="img/portfolio/web/menu_mobile.png" alt="...">
+                </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="container text-center">
+    <!-- Large modal -->
+      <div class="modal fade bs-example-modal-lg" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div id="carousel2" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <h4>Maison de l'Emploi du Valenciennois - Bandeau</h4>
+                  <img class="img-responsive" src="img/portfolio/illustrations/bandeau_haut_violet.png" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Défi Famille à Energie Positive</h4>
+                  <img class="img-responsive" src="img/portfolio/illustrations/dfaep.png" alt="...">
+                </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Portfolio Modal 3 -->
+    <div class="container text-center">
+    <!-- Large modal -->
+      <div class="modal fade bs-example-modal-lg" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div id="carousel3" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <h4>Modern House - Lounge</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/salon.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Modern House - Kitchen</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/cuisine.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Modern House - Bedroom</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/chambre.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Modern House - Children's Bedroom</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/chambre_enfant.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Modern House - Master Bedroom</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/chambre_parental.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Modern House - Bathroom</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/salle_de_bain.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Room - Dining Room</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/salle_a_manger.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Logo - AFPA (Reims)</h4>
+                  <img class="img-responsive" src="img/portfolio/3d/Logo_AFPA.jpg" alt="...">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="container text-center">
+    <!-- Large modal -->
+      <div class="modal fade bs-example-modal-lg" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div id="carousel4" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal01.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal02.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal03.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal04.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal05.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal05.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal07.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal08.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Portugal</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/portugal09.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro01.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro02.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro03.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro04.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro05.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro06.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro07.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro08.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro09.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro10.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro11.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro12.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro13.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro14.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro15.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro16.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Montenegro</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/montenegro17.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande02.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande03.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande04.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande05.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande06.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande07.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande08.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande09.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande10.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande11.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <h4>Irelande - Cliff of Moher</h4>
+                  <img class="img-responsive img-centered" src="img/portfolio/photographie/irelande12.jpg" alt="...">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel4" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel4" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/script.min.js"></script>
+
+</body>
+
 </html>
