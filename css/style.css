@@ -464,7 +464,7 @@ section h3.section-subheading {
     left: 50%;
   }
   .timeline > li {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     min-height: 100px;
   }
   .timeline > li .timeline-panel {
@@ -730,4 +730,13 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
+}
+
+
+#experience > div > div:nth-child(2) > div > ul > li:nth-child(2) > div.timeline-image > img{
+	margin: 15px 0 !important;
+}
+
+#experience > div > div:nth-child(2) > div > ul > li:nth-child(2) > div.timeline-image{
+  background-color: white;
 }
